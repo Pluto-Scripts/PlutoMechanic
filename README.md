@@ -1,33 +1,35 @@
+# PlutoMechanic
+
 # **<span style="color:darkblue">[INFO] Check out our Discord Server: discord.gg/Uu5rNSBpH6</span>**
+
 ### **Please leave a review**
-**This will be updated sometimes if contacted about issues however not all the time**
+**This will be updated sometimes if contacted about issues, but not always.**
 
-## PlutoMechanic 
-PlutoMechanic is a free, and a plugin designed to enhance roleplay servers by adding a mechanic job with customizable repair mechanics.
-Commands
+## Overview
+PlutoMechanic is a free plugin designed to enhance roleplay servers by adding a mechanic job with customizable repair mechanics.
 
-/repairvehicle (/rv): Repairs a disabled vehicle (configurable permission).
-/adminrepair (/ar): Instantly repairs any vehicle (admin-only, configurable permission).
+## Commands
+- `/repairvehicle` (`/rv`): Repairs a disabled vehicle (configurable permission).
+- `/adminrepair` (`/ar`): Instantly repairs any vehicle (admin-only, configurable permission).
 
-### Features
+## Features
+- 🗃️ **Mechanic Job**: Repair vehicles with configurable permissions and payouts.
+- 🛠️ **Customizable Repairs**: Use a specific item (e.g., blowtorch) or commands, with configurable repair duration.
+- 🛡️ **Vehicle Protection**: Prevents vehicle explosions and disables them until repaired.
+- ⚔️ **Repair Protection**: Prevents people from repairing vehicles unless they have mechanic permission.
+- 🥋 **Admin Tools**: Dedicated admin repair command.
+- ⚙️ **Localization**: All messages customizable via Translation List.
+- 🔥 **No loader, fully yours**.
+- 💸 **Free**: No cost, fully featured.
 
-- 🗃️ Mechanic Job: Repair vehicles with configurable permissions and payouts.
-- 🛠️ Customizable Repairs: Use a specific item (e.g., blowtorch) or commands, with configurable repair duration.
-- 🛡️ Vehicle Protection: Prevents vehicle explosions and disables them until repaired.
-- ⚔️ Repair Protection: Prevents people from repairing vehicles unless they have mechanic permission
-- 🥋 Admin Tools: Dedicated admin repair command.
-- ⚙️ Localization: All messages customizable via Translation List.
-- 🔥 No loader, fully yours.
-- 💸 Free: No cost, fully featured.
-
-### Configuration
-
-Enable/disable item or command repairs.
-Set repair item ID, payout amount, and repair duration. (Repair item needs to be a melee weapon with `Repair` like a blowtorch)
-Customize permissions for mechanics and admins.
+## Configuration
+- Enable/disable item or command repairs.
+- Set repair item ID, payout amount, and repair duration. (Repair item needs to be a melee weapon with `Repair`, like a blowtorch)
+- Customize permissions for mechanics and admins.
 
 ### Example Configuration
-`<?xml version="1.0" encoding="utf-8"?>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
 <PlutoMechanicConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <EnableRepairItem>true</EnableRepairItem>
   <RepairItemId>76</RepairItemId>
@@ -36,10 +38,12 @@ Customize permissions for mechanics and admins.
   <AdminPermission>plutomechanic.admin</AdminPermission>
   <CommandEnabled>true</CommandEnabled>
   <RepairDurationSeconds>5</RepairDurationSeconds>
-</PlutoMechanicConfiguration>`
+</PlutoMechanicConfiguration>
+```
 
 ### Translations
-`<?xml version="1.0" encoding="utf-8"?>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
 <Translations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Translation Id="no_permission" Value="You do not have permission to use this command!" />
   <Translation Id="no_permission_item" Value="You do not have permission to use this item!" />
@@ -54,4 +58,5 @@ Customize permissions for mechanics and admins.
   <Translation Id="repair_payout" Value="You earned {0} for the repair job!" />
   <Translation Id="invalid_repair_item" Value="You must use the correct repair tool to repair vehicles!" />
   <Translation Id="vehicle_already_being_repaired" Value="This vehicle is already being repaired!" />
-</Translations>`
+</Translations>
+```
